@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".calories">
+
+
+    <ImageView
+        android:id="@+id/calories_burnt_pro"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/mini_box_backgnd"
+        android:elevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.033" />
+    <ProgressBar
+        android:id="@+id/calories_burnt_ProBar"
+        style="?android:attr/progressBarStyle"
+        android:indeterminateOnly="false"
+        android:progressDrawable="@drawable/circle_pro_bckgnd"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:progress="60"
+        android:elevation="9dp"
+        app:layout_constraintBottom_toBottomOf="@+id/calories_burnt_pro"
+        app:layout_constraintEnd_toEndOf="@+id/calories_burnt_pro"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="@+id/calories_burnt_pro"
+        app:layout_constraintTop_toTopOf="@+id/calories_burnt_pro" />
+    <TextView
+        android:id="@+id/calories_burnt_ProBar_Txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="9dp"
+        android:text="60%"
+        android:textSize="35dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        app:layout_constraintBottom_toBottomOf="@+id/calories_burnt_ProBar"
+        app:layout_constraintEnd_toEndOf="@+id/calories_burnt_ProBar"
+        app:layout_constraintStart_toStartOf="@+id/calories_burnt_ProBar"
+        app:layout_constraintTop_toTopOf="@+id/calories_burnt_ProBar" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="9dp"
+        android:text="50/100\nCalories"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toBottomOf="@+id/calories_burnt_pro"
+        app:layout_constraintEnd_toEndOf="@+id/calories_burnt_pro"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toEndOf="@+id/calories_burnt_ProBar"
+        app:layout_constraintTop_toTopOf="@+id/calories_burnt_pro"
+        app:layout_constraintVertical_bias="0.123" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/mini_box_backgnd"
+        android:elevation="9dp"
+        app:layout_constraintBottom_toBottomOf="@+id/calories_burnt_pro"
+        app:layout_constraintEnd_toEndOf="@+id/calories_burnt_pro"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toEndOf="@+id/calories_burnt_ProBar"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.404" />
+    <ImageView
+        android:id="@+id/addWork"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/purple_plus"
+        android:elevation="9dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+
+
+    <ImageView
+        android:id="@+id/calories_burnt_history1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/mini_box_backgnd"
+        android:elevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calories_burnt_pro"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/hisDateBox1"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:background="@drawable/mini_box_backgnd"
+        android:elevation="9dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/calories_burnt_history1"
+        app:layout_constraintEnd_toEndOf="@+id/calories_burnt_history1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/calories_burnt_history1"
+        app:layout_constraintTop_toTopOf="@+id/calories_burnt_history1"
+        app:layout_constraintVertical_bias="0.45"
+        app:layout_goneMarginStart="10dp" />
+    <TextView
+        android:id="@+id/hisDate1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="9dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="12/05/2023"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/hisDateBox1"
+        app:layout_constraintEnd_toEndOf="@+id/hisDateBox1"
+        app:layout_constraintStart_toStartOf="@+id/hisDateBox1"
+        app:layout_constraintTop_toTopOf="@+id/hisDateBox1" />
+    <ImageView
+        android:id="@+id/hisCalValBox1"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:background="@drawable/mini_box_backgnd"
+        android:elevation="9dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/calories_burnt_history1"
+        app:layout_constraintEnd_toEndOf="@+id/calories_burnt_history1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/calories_burnt_history1"
+        app:layout_constraintTop_toTopOf="@+id/calories_burnt_history1"
+        app:layout_constraintVertical_bias="0.45" />
+    <TextView
+        android:id="@+id/hisCalVal1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="9dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="1000 Calories"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/hisCalValBox1"
+        app:layout_constraintEnd_toEndOf="@+id/hisCalValBox1"
+        app:layout_constraintStart_toStartOf="@+id/hisCalValBox1"
+        app:layout_constraintTop_toTopOf="@+id/hisCalValBox1" />
+
+    <ImageView
+        android:id="@+id/calories_burnt_history2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/mini_box_backgnd"
+        android:elevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calories_burnt_history1"
+        app:layout_constraintVertical_bias="0.0" />
+    <ImageView
+        android:id="@+id/hisDateBox2"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:background="@drawable/mini_box_backgnd"
+        android:elevation="9dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/calories_burnt_history2"
+        app:layout_constraintEnd_toEndOf="@+id/calories_burnt_history2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/calories_burnt_history2"
+        app:layout_constraintTop_toTopOf="@+id/calories_burnt_history2"
+        app:layout_constraintVertical_bias="0.45"
+        app:layout_goneMarginStart="10dp" />
+
+    <TextView
+        android:id="@+id/hisDate2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:elevation="9dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="12/05/2023"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/hisDateBox2"
+        app:layout_constraintEnd_toEndOf="@+id/hisDateBox2"
+        app:layout_constraintStart_toStartOf="@+id/hisDateBox2"
+        app:layout_constraintTop_toTopOf="@+id/hisDateBox2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/hisCalValBox2"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:background="@drawable/mini_box_backgnd"
+        android:elevation="9dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/calories_burnt_history2"
+        app:layout_constraintEnd_toEndOf="@+id/calories_burnt_history2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/calories_burnt_history2"
+        app:layout_constraintTop_toTopOf="@+id/calories_burnt_history2"
+        app:layout_constraintVertical_bias="0.45" />
+    <TextView
+        android:id="@+id/hisCalVal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="9dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="1000 Calories"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/hisCalValBox2"
+        app:layout_constraintEnd_toEndOf="@+id/hisCalValBox2"
+        app:layout_constraintStart_toStartOf="@+id/hisCalValBox2"
+        app:layout_constraintTop_toTopOf="@+id/hisCalValBox2" />
+
+
+    <ImageView
+        android:id="@+id/calories_burnt_history3"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/mini_box_backgnd"
+        android:elevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calories_burnt_history2"
+        app:layout_constraintVertical_bias="0.0" />
+    <ImageView
+        android:id="@+id/hisDateBox3"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:background="@drawable/mini_box_backgnd"
+        android:elevation="9dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/calories_burnt_history3"
+        app:layout_constraintEnd_toEndOf="@+id/calories_burnt_history3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/calories_burnt_history3"
+        app:layout_constraintTop_toTopOf="@+id/calories_burnt_history3"
+        app:layout_constraintVertical_bias="0.45"
+        app:layout_goneMarginStart="10dp" />
+
+    <TextView
+        android:id="@+id/hisDate3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:elevation="9dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="12/05/2023"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/hisDateBox3"
+        app:layout_constraintEnd_toEndOf="@+id/hisDateBox3"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="@+id/hisDateBox3"
+        app:layout_constraintTop_toTopOf="@+id/hisDateBox3"
+        app:layout_constraintVertical_bias="0.142" />
+
+    <ImageView
+        android:id="@+id/hisCalValBox3"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:background="@drawable/mini_box_backgnd"
+        android:elevation="9dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/calories_burnt_history3"
+        app:layout_constraintEnd_toEndOf="@+id/calories_burnt_history3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/calories_burnt_history3"
+        app:layout_constraintTop_toTopOf="@+id/calories_burnt_history3"
+        app:layout_constraintVertical_bias="0.45" />
+    <TextView
+        android:id="@+id/hisCalVal3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="9dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="1000 Calories"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/hisCalValBox3"
+        app:layout_constraintEnd_toEndOf="@+id/hisCalValBox3"
+        app:layout_constraintStart_toStartOf="@+id/hisCalValBox3"
+        app:layout_constraintTop_toTopOf="@+id/hisCalValBox3" />
+
+
+
+    <ImageView
+        android:id="@+id/calories_burnt_history4"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/mini_box_backgnd"
+        android:elevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calories_burnt_history3"
+        app:layout_constraintVertical_bias="0.0" />
+    <ImageView
+        android:id="@+id/hisDateBox4"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:background="@drawable/mini_box_backgnd"
+        android:elevation="9dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/calories_burnt_history4"
+        app:layout_constraintEnd_toEndOf="@+id/calories_burnt_history4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/calories_burnt_history4"
+        app:layout_constraintTop_toTopOf="@+id/calories_burnt_history4"
+        app:layout_constraintVertical_bias="0.45"
+        app:layout_goneMarginStart="10dp" />
+
+    <TextView
+        android:id="@+id/hisDate4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:elevation="9dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="12/05/2023"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/hisDateBox4"
+        app:layout_constraintEnd_toEndOf="@+id/hisDateBox4"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="@+id/hisDateBox4"
+        app:layout_constraintTop_toTopOf="@+id/hisDateBox4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/hisCalValBox4"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:background="@drawable/mini_box_backgnd"
+        android:elevation="9dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/calories_burnt_history4"
+        app:layout_constraintEnd_toEndOf="@+id/calories_burnt_history4"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/calories_burnt_history4"
+        app:layout_constraintTop_toTopOf="@+id/calories_burnt_history4"
+        app:layout_constraintVertical_bias="0.45" />
+    <TextView
+        android:id="@+id/hisCalVal4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="9dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="1000 Calories"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/hisCalValBox4"
+        app:layout_constraintEnd_toEndOf="@+id/hisCalValBox4"
+        app:layout_constraintStart_toStartOf="@+id/hisCalValBox4"
+        app:layout_constraintTop_toTopOf="@+id/hisCalValBox4" />
+
+
+
+    <ImageView
+        android:id="@+id/calories_burnt_history5"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/mini_box_backgnd"
+        android:elevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calories_burnt_history4"
+        app:layout_constraintVertical_bias="0.0" />
+    <ImageView
+        android:id="@+id/hisDateBox5"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:background="@drawable/mini_box_backgnd"
+        android:elevation="9dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/calories_burnt_history5"
+        app:layout_constraintEnd_toEndOf="@+id/calories_burnt_history5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/calories_burnt_history5"
+        app:layout_constraintTop_toTopOf="@+id/calories_burnt_history5"
+        app:layout_constraintVertical_bias="0.45"
+        app:layout_goneMarginStart="10dp" />
+
+    <TextView
+        android:id="@+id/hisDate5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:elevation="9dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="12/05/2023"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/hisDateBox5"
+        app:layout_constraintEnd_toEndOf="@+id/hisDateBox5"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="@+id/hisDateBox5"
+        app:layout_constraintTop_toTopOf="@+id/hisDateBox5"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/hisCalValBox5"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:background="@drawable/mini_box_backgnd"
+        android:elevation="9dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/calories_burnt_history5"
+        app:layout_constraintEnd_toEndOf="@+id/calories_burnt_history5"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/calories_burnt_history5"
+        app:layout_constraintTop_toTopOf="@+id/calories_burnt_history5"
+        app:layout_constraintVertical_bias="0.45" />
+    <TextView
+        android:id="@+id/hisCalVal5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="9dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="1000 Calories"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/hisCalValBox5"
+        app:layout_constraintEnd_toEndOf="@+id/hisCalValBox5"
+        app:layout_constraintStart_toStartOf="@+id/hisCalValBox5"
+        app:layout_constraintTop_toTopOf="@+id/hisCalValBox5" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

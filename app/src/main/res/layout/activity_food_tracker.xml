@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".foodTracker">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Daily Nutrition"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <ImageView
+        android:id="@+id/proBarHolder"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/mini_box_backgnd"
+        android:elevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+    <ProgressBar
+        android:id="@+id/caloriesProBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:elevation="9dp"
+        android:indeterminateOnly="false"
+        android:progress="60"
+        android:progressDrawable="@drawable/circle_pro_bckgnd"
+        app:layout_constraintBottom_toBottomOf="@+id/proBarHolder"
+        app:layout_constraintEnd_toEndOf="@+id/proBarHolder"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintStart_toStartOf="@+id/proBarHolder"
+        app:layout_constraintTop_toTopOf="@+id/proBarHolder"
+        app:layout_constraintVertical_bias="0.45" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="9dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="1256"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="@+id/caloriesProBar"
+        app:layout_constraintEnd_toEndOf="@+id/caloriesProBar"
+        app:layout_constraintStart_toStartOf="@+id/caloriesProBar"
+        app:layout_constraintTop_toTopOf="@+id/caloriesProBar" />
+
+    <TextView
+        android:id="@+id/protein"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="9dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Protein : 87"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/proBarHolder"
+        app:layout_constraintEnd_toEndOf="@+id/proBarHolder"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toEndOf="@+id/caloriesProBar"
+        app:layout_constraintTop_toTopOf="@+id/proBarHolder"
+        app:layout_constraintVertical_bias="0.213" />
+
+    <TextView
+        android:id="@+id/carbs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="9dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Carbs : 107"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/proBarHolder"
+        app:layout_constraintEnd_toEndOf="@+id/proBarHolder"
+        app:layout_constraintHorizontal_bias="0.319"
+        app:layout_constraintStart_toEndOf="@+id/caloriesProBar"
+        app:layout_constraintTop_toBottomOf="@+id/protein"
+        app:layout_constraintVertical_bias="0.0" />
+    <TextView
+        android:id="@+id/fats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="9dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Fats : 47"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/proBarHolder"
+        app:layout_constraintEnd_toEndOf="@+id/proBarHolder"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintStart_toEndOf="@+id/caloriesProBar"
+        app:layout_constraintTop_toBottomOf="@+id/carbs"
+        app:layout_constraintVertical_bias="0.0" />
+    <TextView
+        android:id="@+id/fibers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="9dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Fibers : 27"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/proBarHolder"
+        app:layout_constraintEnd_toEndOf="@+id/proBarHolder"
+        app:layout_constraintHorizontal_bias="0.283"
+        app:layout_constraintStart_toEndOf="@+id/caloriesProBar"
+        app:layout_constraintTop_toBottomOf="@+id/fats"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+
+    <ImageView
+        android:id="@+id/breakFast"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/mini_box_backgnd"
+        android:elevation="9dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/proBarHolder"
+        app:layout_constraintVertical_bias="0.0" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="9dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="BreakFast"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="@+id/breakFast"
+        app:layout_constraintEnd_toEndOf="@+id/breakFast"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="@+id/breakFast"
+        app:layout_constraintTop_toTopOf="@+id/breakFast"
+        app:layout_constraintVertical_bias="0.111" />
+    <ImageView
+        android:id="@+id/breakFastAdd"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/purple_plus"
+        android:elevation="9dp"
+        app:layout_constraintBottom_toBottomOf="@+id/breakFast"
+        app:layout_constraintEnd_toEndOf="@+id/breakFast"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toStartOf="@+id/breakFast"
+        app:layout_constraintTop_toBottomOf="@+id/proBarHolder"
+        app:layout_constraintVertical_bias="0.627" />
+
+    <ImageView
+        android:id="@+id/lunch"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/mini_box_backgnd"
+        android:elevation="9dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/breakFast"
+        app:layout_constraintVertical_bias="0.0" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="9dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Lunch"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lunch"
+        app:layout_constraintEnd_toEndOf="@+id/lunch"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="@+id/lunch"
+        app:layout_constraintTop_toTopOf="@+id/lunch"
+        app:layout_constraintVertical_bias="0.111" />
+    <ImageView
+        android:id="@+id/lunchAdd"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/purple_plus"
+        android:elevation="9dp"
+        app:layout_constraintBottom_toBottomOf="@+id/lunch"
+        app:layout_constraintEnd_toEndOf="@+id/lunch"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toStartOf="@+id/lunch"
+        app:layout_constraintTop_toTopOf="@+id/lunch"
+        app:layout_constraintVertical_bias="0.58" />
+
+
+    <ImageView
+        android:id="@+id/dinner"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/mini_box_backgnd"
+        android:elevation="9dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lunch"
+        app:layout_constraintVertical_bias="0.0" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="9dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Dinner"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="@+id/dinner"
+        app:layout_constraintEnd_toEndOf="@+id/dinner"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="@+id/dinner"
+        app:layout_constraintTop_toTopOf="@+id/dinner"
+        app:layout_constraintVertical_bias="0.111" />
+
+    <ImageView
+        android:id="@+id/dinnerAdd"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/purple_plus"
+        android:elevation="9dp"
+        app:layout_constraintBottom_toBottomOf="@+id/dinner"
+        app:layout_constraintEnd_toEndOf="@+id/dinner"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toStartOf="@+id/dinner"
+        app:layout_constraintTop_toTopOf="@+id/dinner"
+        app:layout_constraintVertical_bias="0.59" />
+</androidx.constraintlayout.widget.ConstraintLayout>

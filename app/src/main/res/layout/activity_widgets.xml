@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".Widgets">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="255dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/top_dashboard"
+            android:layout_width="380dp"
+            android:layout_height="100dp"
+            android:background="@drawable/top_box_backgnd"
+            android:elevation="8dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.466"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/top_dish"
+            android:layout_width="80dp"
+            android:layout_height="55dp"
+            android:background="@drawable/food_tracker"
+            android:elevation="9dp"
+            app:layout_constraintBottom_toBottomOf="@+id/top_dashboard"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="@+id/top_dashboard"
+            app:layout_constraintRight_toRightOf="@+id/top_dashboard"
+            app:layout_constraintTop_toTopOf="@+id/top_dashboard"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/useless_txt"
+            style="@style/TextAppearance.AppCompat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:elevation="9dp"
+            android:shadowColor="#E91E63"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="9"
+            android:text="Delight your taste buds with every bite!"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="@+id/top_dashboard"
+            app:layout_constraintTop_toTopOf="@+id/top_dashboard" />
+
+        <ImageView
+            android:id="@+id/addGoal"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/purple_plus"
+            android:elevation="9dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/goToFoodTracker"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="28dp"
+            android:background="@drawable/purple_analytics"
+            android:elevation="9dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/nutri_tracker"
+            android:layout_width="380dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/bottom_box_backgnd"
+            android:elevation="7dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/top_dashboard" />
+
+        <ProgressBar
+            android:id="@+id/fatsProBar"
+            android:progressDrawable="@drawable/progressbarbackgnd"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="150dp"
+            android:layout_height="4dp"
+            android:elevation="9dp"
+            android:scaleY="2"
+            app:layout_constraintBottom_toBottomOf="@+id/nutri_tracker"
+            app:layout_constraintEnd_toEndOf="@+id/nutri_tracker"
+            app:layout_constraintHorizontal_bias="0.943"
+            app:layout_constraintStart_toStartOf="@+id/nutri_tracker"
+            app:layout_constraintTop_toTopOf="@+id/nutri_tracker"
+            app:layout_constraintVertical_bias="0.369" />
+
+        <TextView
+            android:id="@+id/fatsTxt"
+            style="@style/TextAppearance.AppCompat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="124dp"
+            android:elevation="9dp"
+            android:shadowColor="#E91E63"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="9"
+            android:text="Fats"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/nutri_tracker"
+            app:layout_constraintTop_toBottomOf="@+id/top_dashboard" />
+
+        <ProgressBar
+            android:id="@+id/proteinProBar"
+            android:progressDrawable="@drawable/progressbarbackgnd"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="150dp"
+            android:layout_height="4dp"
+            android:elevation="9dp"
+            android:scaleY="2"
+            app:layout_constraintBottom_toBottomOf="@+id/nutri_tracker"
+            app:layout_constraintEnd_toEndOf="@+id/nutri_tracker"
+            app:layout_constraintHorizontal_bias="0.06"
+            app:layout_constraintStart_toStartOf="@+id/nutri_tracker"
+            app:layout_constraintTop_toTopOf="@+id/nutri_tracker"
+            app:layout_constraintVertical_bias="0.369" />
+
+        <TextView
+            android:id="@+id/proteinTxt"
+            style="@style/TextAppearance.AppCompat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="20dp"
+            android:elevation="9dp"
+            android:shadowColor="#E91E63"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="9"
+            android:text="Protein"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="@+id/nutri_tracker"
+            app:layout_constraintTop_toBottomOf="@+id/top_dashboard" />
+
+        <ProgressBar
+            android:id="@+id/carbsProBar"
+            android:progressDrawable="@drawable/progressbarbackgnd"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="150dp"
+            android:layout_height="4dp"
+            android:elevation="9dp"
+            android:scaleY="2"
+            app:layout_constraintBottom_toBottomOf="@+id/nutri_tracker"
+            app:layout_constraintEnd_toEndOf="@+id/nutri_tracker"
+            app:layout_constraintHorizontal_bias="0.064"
+            app:layout_constraintStart_toStartOf="@+id/nutri_tracker"
+            app:layout_constraintTop_toTopOf="@+id/nutri_tracker"
+            app:layout_constraintVertical_bias="0.807" />
+
+        <TextView
+            android:id="@+id/carbsTxt"
+            style="@style/TextAppearance.AppCompat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="76dp"
+            android:elevation="9dp"
+            android:shadowColor="#E91E63"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="9"
+            android:text="Carbs"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="@+id/nutri_tracker"
+            app:layout_constraintTop_toBottomOf="@+id/top_dashboard" />
+
+        <ProgressBar
+            android:id="@+id/fiberProBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="150dp"
+            android:progressDrawable="@drawable/progressbarbackgnd"
+            android:layout_height="4dp"
+            android:elevation="9dp"
+            android:scaleY="2"
+            app:layout_constraintBottom_toBottomOf="@+id/nutri_tracker"
+            app:layout_constraintEnd_toEndOf="@+id/nutri_tracker"
+            app:layout_constraintHorizontal_bias="0.943"
+            app:layout_constraintStart_toStartOf="@+id/nutri_tracker"
+            app:layout_constraintTop_toTopOf="@+id/nutri_tracker"
+            app:layout_constraintVertical_bias="0.807" />
+
+        <TextView
+            android:id="@+id/fiberTxt"
+            style="@style/TextAppearance.AppCompat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="216dp"
+            android:layout_marginTop="76dp"
+            android:elevation="9dp"
+            android:shadowColor="#E91E63"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="9"
+            android:text="Fibers"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="@+id/nutri_tracker"
+            app:layout_constraintTop_toBottomOf="@+id/top_dashboard" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="475dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <ImageView
+            android:id="@+id/calories_burnt"
+            android:layout_width="170dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/mini_box_backgnd"
+            android:elevation="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.041"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/calories_burnt_symbol"
+            android:layout_width="120dp"
+            android:layout_height="90dp"
+            android:background="@drawable/calories_burnt"
+            android:elevation="9dp"
+            app:layout_constraintBottom_toBottomOf="@+id/calories_burnt"
+            app:layout_constraintEnd_toEndOf="@+id/calories_burnt"
+            app:layout_constraintStart_toStartOf="@+id/calories_burnt"
+            app:layout_constraintTop_toTopOf="@+id/calories_burnt"
+            app:layout_constraintVertical_bias="0.4" />
+
+        <TextView
+            android:id="@+id/calories_burntTxt"
+            style="@style/TextAppearance.AppCompat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="9dp"
+            android:shadowColor="#6B8BEC"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="9"
+            android:text="Calories burnt"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/calories_burnt"
+            app:layout_constraintEnd_toEndOf="@+id/calories_burnt"
+            app:layout_constraintStart_toStartOf="@+id/calories_burnt"
+            app:layout_constraintTop_toTopOf="@+id/calories_burnt"
+            app:layout_constraintVertical_bias="0.926" />
+
+        <ImageView
+            android:id="@+id/food_tracker"
+            android:layout_width="170dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/mini_box_backgnd"
+            android:elevation="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.038"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calories_burnt" />
+
+        <ImageView
+            android:id="@+id/food_tracker_symbol"
+            android:layout_width="120dp"
+            android:layout_height="90dp"
+            android:background="@drawable/food_tracker"
+            android:elevation="9dp"
+            app:layout_constraintBottom_toBottomOf="@+id/food_tracker"
+            app:layout_constraintLeft_toLeftOf="@+id/food_tracker"
+            app:layout_constraintRight_toRightOf="@+id/food_tracker"
+            app:layout_constraintTop_toTopOf="@+id/food_tracker"
+            app:layout_constraintVertical_bias="0.316" />
+
+        <TextView
+            android:id="@+id/food_trackerTxt"
+            style="@style/TextAppearance.AppCompat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="9dp"
+            android:shadowColor="#E91E63"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="9"
+            android:text="Food Tracker"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/food_tracker"
+            app:layout_constraintEnd_toEndOf="@+id/food_tracker"
+            app:layout_constraintHorizontal_bias="0.528"
+            app:layout_constraintStart_toStartOf="@+id/food_tracker"
+            app:layout_constraintTop_toTopOf="@+id/food_tracker"
+            app:layout_constraintVertical_bias="0.886" />
+
+        <ImageView
+            android:id="@+id/heart_beat"
+            android:layout_width="170dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/mini_box_backgnd"
+            android:elevation="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.038"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/food_tracker" />
+
+        <ImageView
+            android:id="@+id/heart_beat_symbol"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:background="@drawable/heart_beat"
+            android:elevation="9dp"
+            app:layout_constraintBottom_toBottomOf="@+id/heart_beat"
+            app:layout_constraintHorizontal_bias="0.471"
+            app:layout_constraintLeft_toLeftOf="@+id/heart_beat"
+            app:layout_constraintRight_toRightOf="@+id/heart_beat"
+            app:layout_constraintTop_toTopOf="@+id/heart_beat"
+            app:layout_constraintVertical_bias="0.366" />
+
+        <TextView
+            android:id="@+id/heart_beatTxt"
+            style="@style/TextAppearance.AppCompat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="9dp"
+            android:shadowColor="#9C27B0"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="9"
+            android:text="Heart Beat"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/heart_beat"
+            app:layout_constraintEnd_toEndOf="@+id/heart_beat"
+            app:layout_constraintStart_toStartOf="@+id/heart_beat"
+            app:layout_constraintTop_toBottomOf="@+id/food_tracker"
+            app:layout_constraintVertical_bias="0.914" />
+
+        <ImageView
+            android:id="@+id/goal_achieved"
+            android:layout_width="170dp"
+            android:layout_height="150dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/mini_box_backgnd"
+            android:elevation="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.974"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/goal_achieved_symbol"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/goals_achieved"
+            android:elevation="9dp"
+            app:layout_constraintBottom_toBottomOf="@+id/goal_achieved"
+            app:layout_constraintHorizontal_bias="0.414"
+            app:layout_constraintLeft_toLeftOf="@+id/goal_achieved"
+            app:layout_constraintRight_toRightOf="@+id/goal_achieved"
+            app:layout_constraintTop_toTopOf="@+id/goal_achieved"
+            app:layout_constraintVertical_bias="0.28" />
+
+        <TextView
+            android:id="@+id/goal_achievedTxt"
+            style="@style/TextAppearance.AppCompat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="9dp"
+            android:shadowColor="#6AC87E"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="9"
+            android:text="Goals Achieved"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/goal_achieved"
+            app:layout_constraintEnd_toEndOf="@+id/goal_achieved"
+            app:layout_constraintHorizontal_bias="0.451"
+            app:layout_constraintStart_toStartOf="@+id/goal_achieved"
+            app:layout_constraintTop_toTopOf="@+id/goal_achieved"
+            app:layout_constraintVertical_bias="0.926" />
+
+        <ImageView
+            android:id="@+id/food_recipe"
+            android:layout_width="170dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/mini_box_backgnd"
+            android:elevation="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.978"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/goal_achieved" />
+
+        <ImageView
+            android:id="@+id/food_recipe_symbol"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:background="@drawable/food_recipe"
+            android:elevation="9dp"
+            app:layout_constraintBottom_toBottomOf="@+id/food_recipe"
+            app:layout_constraintHorizontal_bias="0.571"
+            app:layout_constraintLeft_toLeftOf="@+id/food_recipe"
+            app:layout_constraintRight_toRightOf="@+id/food_recipe"
+            app:layout_constraintTop_toTopOf="@+id/food_recipe"
+            app:layout_constraintVertical_bias="0.316" />
+
+        <TextView
+            android:id="@+id/food_recipeTxt"
+            style="@style/TextAppearance.AppCompat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="9dp"
+            android:shadowColor="#FBC82F"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="9"
+            android:text="Food Recipe"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/food_recipe"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.435"
+            app:layout_constraintStart_toStartOf="@+id/food_recipe"
+            app:layout_constraintTop_toBottomOf="@+id/goal_achieved"
+            app:layout_constraintVertical_bias="0.89" />
+
+        <ImageView
+            android:id="@+id/step_tracker"
+            android:layout_width="170dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/mini_box_backgnd"
+            android:elevation="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.974"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/food_recipe" />
+
+        <ImageView
+            android:id="@+id/step_tracker_symbol"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:background="@drawable/step_tracker"
+            android:elevation="9dp"
+            app:layout_constraintBottom_toBottomOf="@+id/step_tracker"
+            app:layout_constraintHorizontal_bias="0.528"
+            app:layout_constraintLeft_toLeftOf="@+id/step_tracker"
+            app:layout_constraintRight_toRightOf="@+id/step_tracker"
+            app:layout_constraintTop_toTopOf="@+id/step_tracker"
+            app:layout_constraintVertical_bias="0.366" />
+
+        <TextView
+            android:id="@+id/step_trackerTxt"
+            style="@style/TextAppearance.AppCompat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="9dp"
+            android:shadowColor="#307532"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="9"
+            android:text="Step Tracker"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/step_tracker"
+            app:layout_constraintEnd_toEndOf="@+id/step_tracker"
+            app:layout_constraintHorizontal_bias="0.509"
+            app:layout_constraintStart_toStartOf="@+id/step_tracker"
+            app:layout_constraintTop_toTopOf="@+id/step_tracker"
+            app:layout_constraintVertical_bias="0.91" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

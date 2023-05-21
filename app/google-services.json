@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "363593845705",
+    "project_id": "fitorbit-54876",
+    "storage_bucket": "fitorbit-54876.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:363593845705:android:722aff49cfe9341b1ff618",
+        "android_client_info": {
+          "package_name": "com.fitorbit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "363593845705-s8nhk5uonmgvtvk964dnmc3v49v88cvk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFyGJ6K0stQwxAmHLLalFtbVkFL8HCPPM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "363593845705-s8nhk5uonmgvtvk964dnmc3v49v88cvk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
